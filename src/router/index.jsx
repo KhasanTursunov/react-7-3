@@ -10,6 +10,7 @@ const About = lazy(()=> import("../pages/About"))
 const Contact = lazy(()=> import("../pages/Contact"))
 const Layout = lazy(()=> import("../pages/Layout"))
 const Wishlist = lazy(() => import("../pages/Wishlist"));
+const Cart = lazy(() => import("../pages/Cart"));
 
 const RouterMain = () => {
   return (
@@ -19,6 +20,7 @@ const RouterMain = () => {
             <Route path='/about' element={<SuspenseContainer><About/></SuspenseContainer>}/>
             <Route path='/contact' element={<SuspenseContainer><Contact/></SuspenseContainer>}/>
             <Route path='/wishlist' element={<SuspenseContainer><Wishlist/></SuspenseContainer>}/>
+            <Route path='/cart' element={<SuspenseContainer><Cart/></SuspenseContainer>}/>
         </Route>
     </Routes>
   )

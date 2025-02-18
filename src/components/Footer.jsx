@@ -12,25 +12,8 @@ const Footer = () => {
    const dispatch = useDispatch()
    const count = useSelector(state => state.counter.value)
   return (
-    <div>
-        <p>Footer</p>
-        <Button onClick={()=> dispatch(increment(1))}>
-            <span>Increment 1</span>
-        </Button>
-        <Button onClick={()=> dispatch(increment(10))}>
-            <span>Increment 10</span>
-        </Button>
-        <Button onClick={()=> dispatch(increment(100))}>
-            <span>Increment 100</span>
-        </Button>
-        <Button disabled={count <= 1} onClick={()=> dispatch(dec())}>
-            <span>Decrement</span>
-        </Button>
-        <Button onClick={()=> dispatch(reset())}>
-            <span>Reset</span>
-        </Button>
-    </div>
-  )
+    <></>
+)
 }
 
 export default Footer

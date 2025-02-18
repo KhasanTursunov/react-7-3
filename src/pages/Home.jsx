@@ -14,7 +14,7 @@ const Home = () => {
         .then(res => setProducts(res.data.products))
   }, [])
   return (
-    <div>Home
+    <div>
       <Products data={products}/>
     </div>
   )
